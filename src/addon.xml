@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon 
+  id="plugin.video.gameone"
+  version="0.1"
+  name="Gameone" 
+  provider-name="bri">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension 
+    point="xbmc.python.pluginsource" 
+    library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="de">GameOne Folgen</summary>
+    <summary lang="en">GameOne Episodes</summary>
+    <description lang="de">Das GameOne Addon spielt die GameOne TV Folgen ab</description>
+    <description lang="en">This addon plays the GameOne TV show episodes</description>
+    </extension>
+</addon>
