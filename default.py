@@ -2,20 +2,20 @@ import urllib,urllib2,re,xbmcplugin,xbmcgui
 
 pluginhandle = int(sys.argv[1])
 
-REMOTE_DBG = True 
+#REMOTE_DBG = True 
 
 # append pydev remote debugger
-if REMOTE_DBG:
+#if REMOTE_DBG:
     # Make pydev debugger works for auto reload.
     # Note pydevd module need to be copied in XBMC\system\python\Lib\pysrc
-    try:
-        import pysrc.pydevd as pydevd
+#    try:
+#        import pysrc.pydevd as pydevd
     # stdoutToServer and stderrToServer redirect stdout and stderr to eclipse console
-        pydevd.settrace('localhost', stdoutToServer=True, stderrToServer=True)
-    except ImportError:
-        sys.stderr.write("Error: " +
-            "You must add org.python.pydev.debug.pysrc to your PYTHONPATH.")
-        sys.exit(1)
+#        pydevd.settrace('localhost', stdoutToServer=True, stderrToServer=True)
+#    except ImportError:
+#        sys.stderr.write("Error: " +
+#            "You must add org.python.pydev.debug.pysrc to your PYTHONPATH.")
+#        sys.exit(1)
 
 ##################GameOne.de Addon for xbmc##################################
 #About:  This addon plays the episodes from the german tv series gameone    #
